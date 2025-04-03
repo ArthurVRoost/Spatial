@@ -220,7 +220,7 @@ footer .footerDiv2 .footerBorder {
     font-size: 50px;
   }
 }
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .section1DivP {
     display: flex;
     font-size: 12px;
