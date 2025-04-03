@@ -214,6 +214,16 @@ footer .footerDiv2 .footerBorder {
     font-size: 50px;
   }
 }
+@media (min-width: 769px) and (max-width: 992px) {
+  .section1DivP {
+    display: flex;
+    font-size: 12px;
+    text-align: start;
+  }
+  .section1DivP .section1Div2 {
+    margin-left: 0;
+  }
+}
 /*!
  * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
