@@ -32,7 +32,8 @@ nav
         font-weight: 100
 
     .collapse
-        margin-left: 50vw
+        display: flex
+        justify-content: end
         
     .nav-link
         color: white
@@ -165,7 +166,9 @@ footer
             padding-left: 10px
             padding-right: 10px
 
-@media (max-width: 576px)
+@media (max-width: 768px)
+    body
+        overflow-x: hidden
     .section1DivP
         display: flex
         flex-direction: column
@@ -180,3 +183,5 @@ footer
     .section3Div1
         font-size: 50px
    
+@media (min-width: 769px) and (max-width: 992px) 
+    

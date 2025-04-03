@@ -33,7 +33,8 @@ nav .spanN {
   font-weight: 100;
 }
 nav .collapse {
-  margin-left: 50vw;
+  display: flex;
+  justify-content: end;
 }
 nav .nav-link {
   color: white;
@@ -192,7 +193,10 @@ footer .footerDiv2 .footerBorder {
   padding-right: 10px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .section1DivP {
     display: flex;
     flex-direction: column;
