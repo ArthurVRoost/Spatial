@@ -1,14 +1,99 @@
 @use './_mixins' as *
 
+.imgH
+    background-image: url("../assets/img/banner.jpg")
+    @include bg-size
+    background-attachment: fixed
+    background-repeat: no-repeat
+    
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 80%
+        background-color: rgba(0, 0, 0, 0.5)
+        z-index: 0
+    
 nav
     display: flex
+    
+    
     
     .navbar-brand
         margin-left: 50px
         font-weight: bold
+        color: white
+        padding-top: 40px
     .spanN
         font-weight: 100
 
     .collapse
         margin-left: 50vw
+        
+    .nav-link
+        color: white
+        padding-top: 40px
+
+header
+    @include flex
+    flex-direction: column
+    text-align: center
+    padding-top: 100px
+    z-index: 1
+    position: relative
+    line-height: 1.9
+    .headerP
+        color: white
+        padding-top: 20px
+        opacity: 50%
+        padding-bottom: 20px
+    .headerH1
+        color: white
+
+
+.section1DivP
+    display: flex
+    padding-top: 70px
+    margin-left: 25%
+    margin-right: 15%
+    .section1Div1P
+        color: grey 
+        font-size: 18px
+        padding-top: 2vh
+        opacity: 80%
+    .section1Div2
+        margin-left: 20%
+        color: grey
+        width: 50%
+    .section1Div2
+        line-height: 1.9
+    .section1Div2P2
+        padding-top: 10px
+
+    
+.section2
+    background-color: #F6F6F6
+    padding-top: 80px
+    .section2Div1H2
+        @include flex
+    .section2Div1H3
+        @include flex
+        opacity: 70%
+        color: grey
+        font-weight: 100
+        font-size: 20px
+    .divCard
+        @include flex
+        padding-top: 30px
+        gap: 20px
+        .card-body
+            width: 600px
+    .section2Btn
+        @include flex
+        gap: 10px
+        padding: 50px
+        
+        
         
