@@ -164,12 +164,13 @@ header
                 line-height: 1.9
        
             
-.section4Div
+.section4
         background-image: url("../assets/img/banner.jpg")
         @include bg-section
         background-attachment: fixed
         background-repeat: no-repeat
         position: relative
+        margin-top: 50px
         
         &::before
             content: ''
@@ -180,4 +181,14 @@ header
             height: 100%
             background-color: rgba(0, 0, 0, 0.5)
             z-index: 0
+        .section4Div
+            position: relative
+            z-index: 1
+            color: white
+            @include flex
+            flex-direction: column
+            text-align: center
+            align-items: center
+            padding-top: 50px
+            
         

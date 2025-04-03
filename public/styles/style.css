@@ -204,16 +204,17 @@ header .headerH1 {
   line-height: 1.9;
 }
 
-.section4Div {
+.section4 {
   background-image: url("../assets/img/banner.jpg");
   background-size: cover;
-  background-position: 30% 20%;
+  background-position: 10% 30%;
   height: 30vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
+  margin-top: 50px;
 }
-.section4Div::before {
+.section4::before {
   content: "";
   position: absolute;
   top: 0;
@@ -222,6 +223,17 @@ header .headerH1 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
+}
+.section4 .section4Div {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 50px;
 }
 
 /*!
