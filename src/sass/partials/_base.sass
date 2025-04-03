@@ -2,7 +2,7 @@
 
 .imgH
     background-image: url("../assets/img/banner.jpg")
-    @include bg-size
+    @include bg-header
     background-attachment: fixed
     background-repeat: no-repeat
     
@@ -18,6 +18,8 @@
     
 nav
     display: flex
+    position: relative
+    z-index: 1
     
     
     
@@ -84,16 +86,98 @@ header
         color: grey
         font-weight: 100
         font-size: 20px
-    .divCard
-        @include flex
-        padding-top: 30px
-        gap: 20px
-        .card-body
-            width: 600px
     .section2Btn
         @include flex
         gap: 10px
         padding: 50px
+    .section2Div2
+        @include flex
+        gap: 20px
+        text-align: center
+        font-weight: bold
+
+.section3Div1
+    margin-left: 15%   
+    padding-top: 50px  
+    .section3Div1P
+        font-weight: 100
+        font-size: 20px
+        color: grey
+.section3Div2
+        padding-top: 50px
+        @include flex
+        gap: 30px
+        .section3Div21
+            text-align: end
+            .section3Div21P1
+                font-weight: 100%
+                color: grey
+                opacity: 80%
+            .section3Div21P2
+                color: grey
+                line-height: 1.9
+        .section3Div22
+            display: flex
+            gap: 30px
+            .section3Div22Img
+                border: 8px solid 
+                border-color: #E3E3E3 
+                border-radius: 50%
+        .section3Div23
+            text-align: start
+            .section3Div23P1
+                font-weight: 100%
+                color: grey
+                opacity: 80%
+            .section3Div23P2
+                color: grey
+                line-height: 1.9
+            
+.section3Div3
+        padding-top: 50px
+        @include flex
+        gap: 30px
+        .section3Div31
+            text-align: end
+            .section3Div31P1
+                font-weight: 100%
+                color: grey
+                opacity: 80%
+            .section3Div31P2
+                color: grey
+                line-height: 1.9
+        .section3Div32
+            display: flex
+            gap: 30px
+            .section3Div32Img
+                border: 8px solid 
+                border-color: #E3E3E3 
+                border-radius: 50%
+        .section3Div33
+            text-align: start
+            .section3Div33P1
+                font-weight: 100%
+                color: grey
+                opacity: 80%
+            .section3Div33P2
+                color: grey
+                line-height: 1.9
+       
+            
+.section4Div
+        background-image: url("../assets/img/banner.jpg")
+        @include bg-section
+        background-attachment: fixed
+        background-repeat: no-repeat
+        position: relative
         
-        
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(0, 0, 0, 0.5)
+            z-index: 0
         
