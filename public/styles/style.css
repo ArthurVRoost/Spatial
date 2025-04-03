@@ -112,6 +112,7 @@ header .headerH1 {
   gap: 20px;
   text-align: center;
   font-weight: bold;
+  padding-top: 30px;
 }
 
 .section3Div1 {
@@ -234,6 +235,31 @@ header .headerH1 {
   text-align: center;
   align-items: center;
   padding-top: 50px;
+}
+
+footer {
+  background-color: #F6F6F6;
+  color: rgb(182, 176, 176);
+  padding: 50px;
+}
+footer .footerDiv1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+footer .footerDiv2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+footer .footerDiv2 .footerBorder {
+  border-left: 1px solid rgba(182, 176, 176, 0.638);
+  border-right: 1px solid rgba(182, 176, 176, 0.638);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*!
